@@ -1874,7 +1874,8 @@ void EditorExportTextSceneToBinaryPlugin::_export_file(const String &p_path, con
 		return;
 	}
 
-	bool convert = GLOBAL_GET("editor/convert_text_resources_to_binary_on_export");
+	//bool convert = GLOBAL_GET("editor/convert_text_resources_to_binary_on_export");
+	bool convert = false; // TODO: Binary format is broken on Godot 3.x. Fix this. Use text format for now.
 	if (!convert) {
 		return;
 	}
