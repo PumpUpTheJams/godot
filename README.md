@@ -1,4 +1,4 @@
-# Godot Engine
+# Godot Engine - Custom Version for Gamejams
 
 <p align="center">
   <a href="https://godotengine.org">
