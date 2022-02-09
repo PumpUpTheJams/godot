@@ -68,7 +68,7 @@ struct VSStaticGhost {
 	ObjectID object_id;
 
 	uint32_t last_tick_hit = 0;
-	uint32_t last_gameplay_tick_hit = 0;
+	uint32_t last_room_tick_hit = 0;
 };
 
 class PortalRenderer {
@@ -87,6 +87,9 @@ public:
 		void destroy() {
 			_rooms.clear();
 			room_id = -1;
+
+			last_tick_hit = 0;
+			last_gameplay_tick_hit = 0;
 		}
 
 		// the expanded aabb allows objects to move on most frames
