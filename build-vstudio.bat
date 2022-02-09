@@ -1,0 +1,1 @@
+scons -j 64 p=windows vsproj=yes
